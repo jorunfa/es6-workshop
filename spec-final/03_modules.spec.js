@@ -19,7 +19,7 @@ describe('ES6 Modules', () => {
 
   it('Can alias the import name', () => {
 
-    //Import `Mathy as myMathy` to ge these tests to pass.
+    //Import `Mathy as myMathy` to get these tests to pass.
 
     expect(myMathy).toBeDefined();
     expect(myMathy.sqrt).toEqual(Mathy.sqrt);

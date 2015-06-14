@@ -72,9 +72,9 @@ describe('Rest Parameters', () => {
 
     expect(resty()).toBe(/*ENTER YOUR GUESS HERE*/);
     expect(resty(1)).toBe(/*ENTER YOUR GUESS HERE*/);
-    expect(resty(1,2).length).toBe(/*ENTER YOUR GUESS HERE*/);
-    expect(resty(1,2,3).length).toBe(/*ENTER YOUR GUESS HERE*/);
-    expect(resty(1,2,3, undefined, 5, undefined, 7, undefined, 9, 10).length).toBe(/*ENTER YOUR GUESS HERE*/);
+    expect(resty(1,2)).toBe(/*ENTER YOUR GUESS HERE*/);
+    expect(resty(1,2,3)).toBe(/*ENTER YOUR GUESS HERE*/);
+    expect(resty(1,2,3, undefined, 5, undefined, 7, undefined, 9, 10)).toBe(/*ENTER YOUR GUESS HERE*/);
   });
 
   xit('is an actual array, unlike arguments', () => {
@@ -90,7 +90,6 @@ describe('Rest Parameters', () => {
     var args = argy(1,2,3);
     var rests = resty(1,2,3);
 
-    //
     expect(args.__proto__ == rests.__proto__) .toBe(/*ENTER YOUR GUESS HERE*/);
     expect(args.splice)                       .toBe(/*ENTER YOUR GUESS HERE*/);
 

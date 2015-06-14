@@ -17,7 +17,7 @@ describe('ES6 Modules', () => {
 
   xit('Can alias the import name', () => {
 
-    //Import `Mathy as myMathy` to ge these tests to pass.
+    //Import `Mathy as myMathy` to get these tests to pass.
     //NOTE: All import statements have to be done at the top of the file
 
     expect(myMathy).toBeDefined();
